@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!--Burke Treboni-->
+<html>
+    <head>
+        <title>Babysitter Kata</title>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+               integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+               crossorigin="anonymous"></script>
+        <!-- <link href="css/bootstrap.css" rel="stylesheet"> -->
+        <link href="css/index.css" rel="stylesheet">
+    </head>
+    <body>
+			<h1>Babysitter Kata</h1>
+			<hr>
+			
+			<div id="box-two">
+				<div>
+                    <h3>Start Time To Bed Time Wage Per Hour $:</h3>
+                    <input type="text" id="start_wage"/>
+                    <br />
+                    <h3>Bed Time To Mid Time Wage Per Hour $:</h3>
+                    <input type="text" id="mid_wage" />
+                    <br />
+                    <h3>Mid Time To End Time Wage Per Hour $:</h3>
+                    <input type="text" id="end_wage" />
+                    <br />
+					<h3>Select Start Time</h3>
+					<select name="startValueTime" id="start_time" >
+							<option value=""></option>
+							<option value=5>5pm</option>
+							<option value="6">6pm</option>
+							<option value="7">7pm</option>
+							<option value="8">8pm</option>
+							<option value="9">9pm</option>
+							<option value="10">10pm</option>
+							<option value="11">11pm</option>
+							<option value="12">12am</option>
+							<option value="13">1am</option>
+							<option value="14">2am</option>
+							<option value="15">3am</option>
+							<option value="16">4am</option>
+						</select>
+					<br>
+					<h3>Select Leave Time</h3>
+                    <select name="LeaveTimeValue" id="end_time">
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=5>5pm</option>
+                        <option value="6">6pm</option>
+                        <option value="7">7pm</option>
+                        <option value="8">8pm</option>
+                        <option value="9">9pm</option>
+                        <option value="10">10pm</option>
+                        <option value="11">11pm</option>
+                        <option value="12">12am</option>
+                        <option value="13">1am</option>
+                        <option value="14">2am</option>
+                        <option value="15">3am</option>
+                        <option value="16">4am</option>
+
+                    </select>
+					<br>
+					<h3>Select Bedtime</h3>
+                    <select name="bedTimeValue" id="bed_time">
+                        <option value=""></option>
+                        <option value=5>5pm</option>
+                        <option value="6">6pm</option>
+                        <option value="7">7pm</option>
+                        <option value="8">8pm</option>
+                        <option value="9">9pm</option>
+                        <option value="10">10pm</option>
+                        <option value="11">11pm</option>
+                        <option value="12">12am</option>
+                        <option value="13">1am</option>
+                        <option value="14">2am</option>
+                        <option value="15">3am</option>
+                        <option value="16">4am</option>
+                    </select>
+					<br>
+                    <h3>Select Midnight</h3>
+                    <select name="midnightTime" id="midnight_time">
+                        <option value=""></option>
+                        <option value="5">5pm</option>
+                        <option value="5.5">5:30pm</option>
+                        <option value="6">6pm</option>
+                        <option value="6.5">6:30pm</option>
+                        <option value="7">7pm</option>
+                        <option value="7.5">7:30pm</option>
+                        <option value="8">8pm</option>
+                        <option value="8.5">8:30pm</option>
+                        <option value="9">9pm</option>
+                        <option value="9.5">9:30pm</option>
+                        <option value="10">10pm</option>
+                        <option value="10.5">10:30pm</option>
+                        <option value="11">11pm</option>
+                        <option value="11.5">11:30pm</option>
+                        <option value="12">12am</option>
+                        <option value="12.5">12:30am</option>
+                        <option value="13">1am</option>
+                        <option value="13.5">1:30am</option>
+                        <option value="14">2am</option>
+                        <option value="14.5">2:30am</option>
+                        <option value="15">3am</option>
+                        <option value="15.5">3:30am</option>
+                        <option value="16">4am</option>
+                    </select>
+                    <br>
+                    
+					<button type="button" id="calculate_wage" onclick="calculateWage()">
+						Calculate Wage
+					</button>
+                    <button type="button" id="clear" onclick="clearValues()">
+                        Clear
+                    </button>
+				</div>
+			</div>
+			
+    <script src="js/index.js"></script>  
+    </body>
+</html>
